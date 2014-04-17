@@ -1,4 +1,10 @@
+      module new_module
+        integer :: i
+      end module
+
       program a
+
+        use new_module
 
         type b
           integer :: i
@@ -12,6 +18,7 @@ c This is a comment.
         y%i = 1
         y%x = 1
 
-        write(*,*) y
+        write(*,*)
+     c    y ! comment
 
       end program a
